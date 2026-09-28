@@ -1,6 +1,6 @@
 import numpy as np
 
-# Core storage for expenses
+
 expenses = []
 
 def add_expense():
