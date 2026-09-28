@@ -9,11 +9,13 @@ Students and individuals often struggle to track daily micro-expenses, leading t
 - Users who prefer offline data tracking without complex setups
 
 ## Scope of the Project
-The Personal Expense Tracker provides a minimal, terminal-based workflow to capture expense transactions in real-time. It enables users to categorise items, search past entries, calculate aggregate spending statistics using NumPy, and delete unwanted logs.
+The Personal Expense Tracker provides a minimal, terminal-based workflow to capture expense transactions in real-time. Built using object-oriented principles, it enables users to categorize items, search past entries, calculate aggregate spending statistics using NumPy, persist data locally in JSON format, and delete unwanted logs.
 
 ## High-Level Features
-1. **Transaction Logging**: Record date, category, and monetary value.
+1. **Transaction Logging**: Record date, category, tag, and monetary value using OOP inheritance (`Transaction` -> `Expense`).
 2. **Data Presentation**: Formatted list rendering of historical records.
-3. **Numerical Analytics**: Execution of sum, average, and maximum transaction math via NumPy.
+3. **Numerical Analytics**: Execution of sum, average, max, and min transaction math via NumPy and itertools.
 4. **Targeted Filtering**: Case-insensitive search across category labels.
-5. **Record Removal**: Deletion of entries by index with validation bounds.
+5. **Data Persistence**: Local storage and recovery using JSON files.
+6. **Record Removal**: Deletion of entries by index with validation bounds.
+7. **Automated Testing**: Test suite built with native assertions.
