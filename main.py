@@ -12,7 +12,7 @@ def show_menu():
     print("6. Exit")
     print("="*30)
 
-# Main execution loop
+
 while True:
     show_menu()
     choice = input("Enter your choice (1-6): ")
