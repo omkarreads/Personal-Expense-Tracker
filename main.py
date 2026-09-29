@@ -8,8 +8,9 @@ def show_menu():
     print("2. View All Expenses")
     print("3. View Statistics & Breakdown")
     print("4. Search Expenses by Category")
-    print("5. Delete an Expense")
-    print("6. Exit")
+    print("5. Storage Options")
+    print("6. Delete an Expense")
+    print("7. Exit")
     print("=" * 25)
 
 def main():
@@ -17,7 +18,7 @@ def main():
 
     while True:
         show_menu()
-        choice = input("Select an option (1-6): ").strip()
+        choice = input("Select an option (1-7): ").strip()
 
         if choice == "1":
             tracker.add_expense()
@@ -28,12 +29,15 @@ def main():
         elif choice == "4":
             tracker.search_by_category()
         elif choice == "5":
-            tracker.delete_expense()
+            # Call your storage options method here
+            tracker.storage_options()  # Adjust method name if it's named differently in tracker.py
         elif choice == "6":
+            tracker.delete_expense()
+        elif choice == "7":
             print("\nExiting program. Goodbye!")
             break
         else:
-            print("Invalid selection! Please enter a number from 1 to 6.")
+            print("Invalid selection! Please enter a number from 1 to 7.")
 
 if __name__ == "__main__":
     main()
