@@ -29,8 +29,7 @@ def main():
         elif choice == "4":
             tracker.search_by_category()
         elif choice == "5":
-            # Call your storage options method here
-            tracker.storage_options()  # Adjust method name if it's named differently in tracker.py
+            tracker.storage_options()
         elif choice == "6":
             tracker.delete_expense()
         elif choice == "7":
